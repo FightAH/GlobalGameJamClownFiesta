@@ -68,8 +68,14 @@
     <Compile Include="Assets\BOXOPHOBIC\Utils\PropertyDrawers\BRangeOptionsAttribute.cs" />
     <Compile Include="Assets\BOXOPHOBIC\Utils\PropertyDrawers\BRangeSimpleAttribute.cs" />
     <Compile Include="Assets\Scripts\CameraController.cs" />
+    <Compile Include="Assets\Scripts\DoorOpen.cs" />
     <Compile Include="Assets\Scripts\Legs.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\Puzzle1.cs" />
+    <Compile Include="Assets\Scripts\Puzzle2.cs" />
+    <Compile Include="Assets\Scripts\Puzzle3.cs" />
+    <Compile Include="Assets\Scripts\SiemonZegt.cs" />
+    <Compile Include="Assets\Scripts\Teleport.cs" />
     <None Include="Assets\BOXOPHOBIC\Utils\Shaders\Unlit Prototype Ground.shader" />
     <None Include="Assets\BOXOPHOBIC\Skybox Cubemap Extended\Core\Shaders\Skybox Cubemap Extended.shader" />
     <None Include="Assets\BOXOPHOBIC\Utils\Shaders\SimpleLit Prototype Terrain.shader" />
