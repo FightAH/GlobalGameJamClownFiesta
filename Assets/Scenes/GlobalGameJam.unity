@@ -164,7 +164,6 @@ GameObject:
   - component: {fileID: 659330948}
   - component: {fileID: 659330947}
   - component: {fileID: 659330951}
-  - component: {fileID: 659330950}
   m_Layer: 0
   m_Name: PlayerModel
   m_TagString: Untagged
@@ -246,21 +245,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 659330945}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!111 &659330950
-Animation:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 659330945}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: bd9f0b433ca6d7d47861f06781428c2b, type: 2}
-  m_Animations: []
-  m_WrapMode: 0
-  m_PlayAutomatically: 0
-  m_AnimatePhysics: 0
-  m_CullingType: 0
 --- !u!95 &659330951
 Animator:
   serializedVersion: 3
@@ -354,7 +338,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 2.546e-42, y: 1.01e-43, z: 980710.94, w: 0}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -585,6 +569,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7684adbe32aad2e499b12bf3af75a402, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anim: {fileID: 659330951}
   moveSpeed: 5
   controller: {fileID: 1006897696}
   jumpForce: 15

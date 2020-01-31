@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-
+    public Animator anim;
     public float moveSpeed;
     public CharacterController controller;
     public float jumpForce;
@@ -22,7 +22,8 @@ public class PlayerController : MonoBehaviour
     {
         float yStore = moveDirection.y;
         moveDirection = (transform.forward * Input.GetAxis("Vertical") * moveSpeed) + (transform.right * Input.GetAxis("Horizontal") * moveSpeed);
-      
+        float h = Input.GetAxis("Vertical");
+        anim.SetFloat("speed", h);
         moveDirection.y = yStore;
         if (controller.isGrounded)
         {
@@ -34,5 +35,6 @@ public class PlayerController : MonoBehaviour
         }
         moveDirection.y = moveDirection.y + (Physics.gravity.y * gravityScale * Time.deltaTime);
         controller.Move(moveDirection * Time.deltaTime);
+        
     }
 }
