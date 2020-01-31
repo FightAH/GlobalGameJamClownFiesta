@@ -29,18 +29,18 @@ public class PlayerController : MonoBehaviour
     {
         float yStore = moveDirection.y;
         moveDirection = (transform.forward * Input.GetAxis("Vertical") * moveSpeed) + (transform.right * Input.GetAxis("Horizontal") * moveSpeed);
-        float h = Input.GetAxis("Vertical");
+        float v = Input.GetAxis("Vertical");
+        float h = Input.GetAxis("Horizontal");
         anim.SetFloat("speed", h);
+        anim.SetFloat("speed", v);
         if (legs == 1)
         {
             animLegs.SetFloat("speed", h);
-        }
-        moveDirection.y = yStore;
-        if(legs == 1)
-        {
+            animLegs.SetFloat("speed", v);
             legModel.SetActive(true);
             noLegModel.SetActive(false);
         }
+        moveDirection.y = yStore;
         if (controller.isGrounded && legs == 1)
         {
             moveDirection.y = 0f;

@@ -11,7 +11,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{8CCE6193-58FD-CD1A-9F16-1617866C0346}</ProjectGuid>
+    <ProjectGuid>{72048A6B-D2F4-CC98-D4D7-442D04CAA41E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
@@ -62,47 +62,51 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Assets\Invector-3rdPersonController_LITE\Scripts\Camera\Editor\vThirdPersonCameraEditor.cs" />
-    <Compile Include="Assets\Assets\Invector-3rdPersonController_LITE\Scripts\CharacterController\Editor\Resources\vEditorStartupPrefs.cs" />
-    <Compile Include="Assets\Assets\Invector-3rdPersonController_LITE\Scripts\CharacterController\Editor\vCharacterEditor.cs" />
-    <Compile Include="Assets\Assets\Invector-3rdPersonController_LITE\Scripts\CharacterController\Editor\vInvectorStartup.cs" />
-    <Compile Include="Assets\Assets\Invector-3rdPersonController_LITE\Scripts\CharacterController\Editor\vInvectorWelcomeWindow.cs" />
-    <Compile Include="Assets\Assets\Invector-3rdPersonController_LITE\Scripts\CharacterController\Editor\vThirdPersonInputEditor.cs" />
-    <Compile Include="Assets\Assets\Invector-3rdPersonController_LITE\Scripts\CharacterCreator\Script\Editor\vCreateBasicCharacterEditor.cs" />
-    <Compile Include="Assets\Assets\Invector-3rdPersonController_LITE\Scripts\CharacterCreator\Script\Editor\vHelperEditor.cs" />
-    <Compile Include="Assets\Assets\Invector-3rdPersonController_LITE\Scripts\Generic\Utils\Editor\vCommentEditor.cs" />
+    <Compile Include="Assets\BOXOPHOBIC\Utils\Editor\BConst.cs" />
+    <Compile Include="Assets\BOXOPHOBIC\Utils\Editor\BEditorGUI.cs" />
+    <Compile Include="Assets\BOXOPHOBIC\Utils\Editor\BEditorUtils.cs" />
+    <Compile Include="Assets\BOXOPHOBIC\Utils\Editor\BVersion.cs" />
+    <Compile Include="Assets\BOXOPHOBIC\Utils\PropertyDrawers\Editor\BBannerDrawer.cs" />
+    <Compile Include="Assets\BOXOPHOBIC\Utils\PropertyDrawers\Editor\BCategoryAttributeDrawer.cs" />
+    <Compile Include="Assets\BOXOPHOBIC\Utils\PropertyDrawers\Editor\BCategoryDrawer.cs" />
+    <Compile Include="Assets\BOXOPHOBIC\Utils\PropertyDrawers\Editor\BInteractiveAttributeDrawer.cs" />
+    <Compile Include="Assets\BOXOPHOBIC\Utils\PropertyDrawers\Editor\BInteractiveDrawer.cs" />
+    <Compile Include="Assets\BOXOPHOBIC\Utils\PropertyDrawers\Editor\BMessageAttributeDrawer.cs" />
+    <Compile Include="Assets\BOXOPHOBIC\Utils\PropertyDrawers\Editor\BMessageDrawer.cs" />
+    <Compile Include="Assets\BOXOPHOBIC\Utils\PropertyDrawers\Editor\BRangeOptionsAttributeDrawer.cs" />
+    <Compile Include="Assets\BOXOPHOBIC\Utils\PropertyDrawers\Editor\BRangeSimpleAttributeDrawer.cs" />
     <Reference Include="UnityEditor.TestRunner">
-      <HintPath>C:/Users/Koenm/GlobalGameJam/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
+      <HintPath>C:/Users/Koenm/Documents/GitHub/GlobalGameJamClownFiesta/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.TestRunner">
-      <HintPath>C:/Users/Koenm/GlobalGameJam/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
+      <HintPath>C:/Users/Koenm/Documents/GitHub/GlobalGameJamClownFiesta/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>C:/Users/Koenm/GlobalGameJam/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>C:/Users/Koenm/Documents/GitHub/GlobalGameJamClownFiesta/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>C:/Users/Koenm/GlobalGameJam/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>C:/Users/Koenm/Documents/GitHub/GlobalGameJamClownFiesta/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/Koenm/GlobalGameJam/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Users/Koenm/Documents/GitHub/GlobalGameJamClownFiesta/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>C:/Users/Koenm/GlobalGameJam/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>C:/Users/Koenm/Documents/GitHub/GlobalGameJamClownFiesta/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>C:/Users/Koenm/GlobalGameJam/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>C:/Users/Koenm/Documents/GitHub/GlobalGameJamClownFiesta/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>C:/Users/Koenm/GlobalGameJam/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>C:/Users/Koenm/Documents/GitHub/GlobalGameJamClownFiesta/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>C:/Users/Koenm/GlobalGameJam/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>C:/Users/Koenm/Documents/GitHub/GlobalGameJamClownFiesta/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/Koenm/GlobalGameJam/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Users/Koenm/Documents/GitHub/GlobalGameJamClownFiesta/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>C:/Users/Koenm/GlobalGameJam/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>C:/Users/Koenm/Documents/GitHub/GlobalGameJamClownFiesta/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.0f6/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -309,7 +313,7 @@
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/15.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
-      <HintPath>C:/Users/Koenm/GlobalGameJam/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
+      <HintPath>C:/Users/Koenm/Documents/GitHub/GlobalGameJamClownFiesta/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.0f6/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
@@ -674,7 +678,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp.csproj">
-      <Project>{37E67B10-EAF5-E42F-E090-2DFADABC0EE8}</Project>
+      <Project>{6EA76B36-FFED-3FAA-F180-CA8AB7028A5B}</Project>
       <Name>Assembly-CSharp</Name>
     </ProjectReference>
   </ItemGroup>

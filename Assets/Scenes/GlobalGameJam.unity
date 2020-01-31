@@ -304,6 +304,7 @@ GameObject:
   - component: {fileID: 659330948}
   - component: {fileID: 659330947}
   - component: {fileID: 659330951}
+  - component: {fileID: 659330950}
   m_Layer: 0
   m_Name: PlayerModel
   m_TagString: Untagged
@@ -385,6 +386,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 659330945}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!111 &659330950
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 659330945}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: bd9f0b433ca6d7d47861f06781428c2b, type: 2}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!95 &659330951
 Animator:
   serializedVersion: 3
