@@ -18,6 +18,10 @@ public class PlayerController : MonoBehaviour
 
     public GameObject noLegModel;
 
+    int teleporting = 0;
+
+    float moving = 0f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -27,19 +31,26 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-            float yStore = moveDirection.y;
-            moveDirection = (transform.forward * Input.GetAxis("Vertical") * moveSpeed) + (transform.right * Input.GetAxis("Horizontal") * moveSpeed);
-            float v = Input.GetAxis("Vertical");
-            float h = Input.GetAxis("Horizontal");
-            anim.SetFloat("speed", h);
-            anim.SetFloat("speed", v);
+        if (teleporting == 0)
+        {
+            if(controller.velocity.magnitude > 0)
+            {
+                moving = 1;
+            }
+            else
+            {
+                moving = 0;
+            }
+            anim.SetFloat("speed", moving);
             if (legs == 1)
             {
-                animLegs.SetFloat("speed", h);
-                animLegs.SetFloat("speed", v);
+                animLegs.SetFloat("speed", moving);
                 legModel.SetActive(true);
                 noLegModel.SetActive(false);
             }
+            float yStore = moveDirection.y;
+            moveDirection = (transform.forward * Input.GetAxis("Vertical") * moveSpeed) + (transform.right * Input.GetAxis("Horizontal") * moveSpeed);
+
             moveDirection.y = yStore;
             if (controller.isGrounded && legs == 1)
             {
@@ -51,7 +62,25 @@ public class PlayerController : MonoBehaviour
             }
             moveDirection.y = moveDirection.y + (Physics.gravity.y * gravityScale * Time.deltaTime);
             controller.Move(moveDirection * Time.deltaTime);
+        }
+    }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.name == "Teleport")
+        {
+            teleporting = 1;
+            this.transform.position = new Vector3(-25.2f, 0.5f, 27f);
+            Debug.Log("Teleport");
+            StartCoroutine(ExampleCoroutine());
+        }
+
+    }
+
+    IEnumerator ExampleCoroutine()
+    {
+        yield return new WaitForSeconds(0.1f);
+        teleporting = 0;
     }
 }
 

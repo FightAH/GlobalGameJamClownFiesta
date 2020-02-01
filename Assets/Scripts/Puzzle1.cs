@@ -19,6 +19,18 @@ public class Puzzle1 : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        red = 1;
+        GameObject blue = GameObject.Find("Blue");
+        Puzzle3 puzzle3 = blue.GetComponent<Puzzle3>();
+        GameObject green = GameObject.Find("Green");
+        Puzzle2 puzzle2 = green.GetComponent<Puzzle2>();
+        if (puzzle2.green == 1 || puzzle3.blue == 1)
+        {
+            red = 0;
+        }
+        else
+        {
+            red = 1;
+        }
+
     }
 }
