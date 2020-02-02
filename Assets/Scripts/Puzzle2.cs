@@ -23,7 +23,7 @@ public class Puzzle2 : MonoBehaviour
         Puzzle1 puzzle1 = red.GetComponent<Puzzle1>();
         GameObject blue = GameObject.Find("Blue");
         Puzzle3 puzzle3 = blue.GetComponent<Puzzle3>();
-        if (puzzle1.red == 1 && puzzle3.blue == 0)
+        if (puzzle1.red == 1 && puzzle3.blue == 1)
         {
             green = 1;
         }
@@ -32,6 +32,10 @@ public class Puzzle2 : MonoBehaviour
             green = 0;
             puzzle1.red = 0;
             puzzle3.blue = 0;
+            puzzle3.blue2 = 0;
+            puzzle1.red = 0;
+            puzzle1.triggered = 0;
+            puzzle3.triggered = 0;
         }
     }
 }

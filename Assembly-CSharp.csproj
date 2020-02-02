@@ -67,7 +67,9 @@
     <Compile Include="Assets\BOXOPHOBIC\Utils\PropertyDrawers\BMessageAttribute.cs" />
     <Compile Include="Assets\BOXOPHOBIC\Utils\PropertyDrawers\BRangeOptionsAttribute.cs" />
     <Compile Include="Assets\BOXOPHOBIC\Utils\PropertyDrawers\BRangeSimpleAttribute.cs" />
+    <Compile Include="Assets\Scripts\Arm.cs" />
     <Compile Include="Assets\Scripts\CameraController.cs" />
+    <Compile Include="Assets\Scripts\Control.cs" />
     <Compile Include="Assets\Scripts\DoorOpen.cs" />
     <Compile Include="Assets\Scripts\Legs.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
@@ -75,6 +77,17 @@
     <Compile Include="Assets\Scripts\Puzzle2.cs" />
     <Compile Include="Assets\Scripts\Puzzle3.cs" />
     <Compile Include="Assets\Scripts\SiemonZegt.cs" />
+    <Compile Include="Assets\Scripts\flipHand.cs" />
+    <Compile Include="Assets\Scripts\flipLeft.cs" />
+    <Compile Include="Assets\Scripts\flipRight.cs" />
+    <Compile Include="Assets\Scripts\flipSwitch.cs" />
+    <Compile Include="Assets\Scripts\goo.cs" />
+    <Compile Include="Assets\Scripts\magnetPickup.cs" />
+    <Compile Include="Assets\Scripts\pressureCheck.cs" />
+    <Compile Include="Assets\Scripts\pressureDeath.cs" />
+    <Compile Include="Assets\Scripts\pressureEnd.cs" />
+    <Compile Include="Assets\Scripts\pressureGood.cs" />
+    <Compile Include="Assets\Scripts\pressurePad.cs" />
     <None Include="Assets\BOXOPHOBIC\Utils\Shaders\Unlit Prototype Ground.shader" />
     <None Include="Assets\BOXOPHOBIC\Skybox Cubemap Extended\Core\Shaders\Skybox Cubemap Extended.shader" />
     <None Include="Assets\BOXOPHOBIC\Utils\Shaders\SimpleLit Prototype Terrain.shader" />

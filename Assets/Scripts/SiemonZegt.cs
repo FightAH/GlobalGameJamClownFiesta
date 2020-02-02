@@ -17,13 +17,14 @@ public class SiemonZegt : MonoBehaviour
     {
 
         lt.color = (Color.red);
-        Debug.Log("Red");
-        yield return new WaitForSeconds(1);
-        lt.color = (Color.green);
-        Debug.Log("Green");
         yield return new WaitForSeconds(1);
         lt.color = (Color.blue);
-        Debug.Log("blue");
+        yield return new WaitForSeconds(1);
+        lt.color = (Color.green);
+        yield return new WaitForSeconds(1);
+        lt.color = (Color.blue);
+        yield return new WaitForSeconds(1);
+        lt.color = (Color.red);
         yield return new WaitForSeconds(1);
         lt.intensity = 0;
         yield return new WaitForSeconds(10);
